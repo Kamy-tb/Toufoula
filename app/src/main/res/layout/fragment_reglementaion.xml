@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReglementaionFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity"
+            android:orientation="vertical"
+            android:scrollbars="horizontal"
+            android:gravity="center">
+            <View
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/red"
+                android:layout_marginTop="50dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="24dp"
+                android:textColor="@color/red"
+                android:gravity="center"
+                android:text="Textes de loi de la protection des enfants">
+            </TextView>
+            <View
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/red" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_border_white"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:textColor="@color/black"
+                    android:text="Article 41 : La présente convention est ouverte à la signature de tous les États.
+\n\n Article 42 : La présente convention est sujette à ratification. Les instruments de ratification seront déposés auprès du Secrétaire général de l’Organisation des Nations Unies.
+\n\n Article 43 : La présente convention reste ouverte à l’adhésion de tout Etat. Les instruments d’adhésion seront déposés auprès du Secrétaire général de l’Organisation des Nations Unies.
+\n\n Article 44 : La présente convention est ouverte à la signature de tous les États.
+\n\n Article 45 : La présente convention est sujette à ratification. Les instruments de ratification seront déposés auprès du Secrétaire général de l’Organisation des Nations Unies.
+\n\n Article 46 : La présente convention reste ouverte à l’adhésion de tout Etat. Les instruments d’adhésion seront déposés auprès du Secrétaire général de l’Organisation des Nations Unies.
+
+"
+                    android:textAlignment="textStart"
+                    android:textSize="20dp"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/red" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

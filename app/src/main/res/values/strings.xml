@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MenuApplication</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="regles">En utilisant cette application, vous consentez à ce que nous collectons et utilisions vos données de géolocalisation. Nous collectons également votre numéro de téléphone .Nous ne partagerons pas vos informations avec des tiers, sauf si la loi l exige ou si nous avons obtenu votre consentement explicite. Si vous ne souhaitez pas que nous collectons vos données de géolocalisation et votre numéro de téléphone, vous pouvez choisir de ne pas utiliser notre service.</string>
+
+    <string-array name="content">
+        <item>Article 46 : La présente convention est ouverte à la signature de tous les États.</item>
+        <item>Article 47 : La présente convention est sujette à ratification. Les instruments de ratification seront déposés auprès du Secrétaire général de l’Organisation des Nations Unies.</item>
+        <item>Article 48 : La présente convention reste ouverte à l’adhésion de tout Etat. Les instruments d’adhésion seront déposés auprès du Secrétaire général de l’Organisation des Nations Unies.</item>
+        <item>Article 46 : La présente convention est ouverte à la signature de tous les États.</item>
+        <item>Article 46 : La présente convention est ouverte à la signature de tous les États.</item>
+        <item>Article 47 : La présente convention est sujette à ratification. Les instruments de ratification seront déposés auprès du Secrétaire général de l’Organisation des Nations Unies.</item>
+        <item>Article 48 : La présente convention reste ouverte à l’adhésion de tout Etat. Les instruments d’adhésion seront déposés auprès du Secrétaire général de l’Organisation des Nations Unies.</item>
+        <item>Article 46 : La présente convention est ouverte à la signature de tous les États.</item>
+    </string-array>
+
+</resources>

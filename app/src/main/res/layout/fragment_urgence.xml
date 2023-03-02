@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UrgenceFragment">
+
+
+
+
+    <LinearLayout
+        android:translationY="-79dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        android:layout_margin="0dp"
+        android:scrollbars="horizontal"
+        android:gravity="center">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="283dp"
+            android:src="@drawable/main_page_asset" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Besoin d'une appel d'urgence ? "
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="40dp">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/call1111"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/my_border_white"
+                    android:gravity="center"
+                    android:text="Protection de l'enfant"
+                    android:textSize="13dp"
+                    app:icon="@drawable/call"
+                    app:iconSize="25dp"
+
+                    />
+
+                <Button
+                    android:id="@+id/call1021"
+                    android:layout_margin="5dp"
+                    android:layout_width="220dp"
+                    app:iconSize="25dp"
+                    android:textSize="13dp"
+                    android:layout_height="50dp"
+                    app:icon="@drawable/call"
+                    android:gravity="center"
+                    android:text="pompiers"
+
+                    android:background="@drawable/my_border_white" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/call1548"
+                android:layout_margin="5dp"
+                android:layout_width="220dp"
+                app:iconSize="25dp"
+                android:textSize="13dp"
+                android:layout_height="50dp"
+                app:icon="@drawable/call"
+                android:gravity="center"
+                android:text="Police"
+                android:background="@drawable/my_border_white" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

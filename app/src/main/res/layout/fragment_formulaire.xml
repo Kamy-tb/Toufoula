@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormulaireFragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:scrollbars="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carte réception\nsignalement"
+            android:textSize="20dp"
+            android:gravity="center">
+
+        </TextView>
+        <View
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#bbbbbb" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Date"
+            android:textSize="15dp"
+            android:layout_gravity="left">
+
+        </TextView>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/my_border_white"
+            android:inputType="date"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Numéro de série"
+            android:textSize="15dp"
+            android:layout_gravity="left">
+
+        </TextView>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/my_border_white"
+            android:inputType="number"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="\nPersonne Signaleur \n"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textSize="15dp"
+            android:layout_gravity="left"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Nom"
+            android:textSize="15dp"
+            android:layout_gravity="left">
+        </TextView>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/my_border_white"
+            android:inputType="text"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Prénom"
+            android:textSize="15dp"
+            android:layout_gravity="left">
+        </TextView>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/my_border_white"
+            android:inputType="text"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Adresse"
+            android:textSize="15dp"
+            android:layout_gravity="left">
+        </TextView>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/my_border_white"
+            android:inputType="text"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Numero de téléphone"
+            android:textSize="15dp"
+            android:layout_gravity="left">
+        </TextView>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/my_border_white"
+            android:inputType="phone"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"/>
+        <View
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#bbbbbb" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="a. "
+            android:textSize="15dp"
+            android:layout_gravity="left">
+        </TextView>
+        <CheckBox android:id="@+id/checkbox_q1_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="signaler pour lui même"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/checkbox_q1_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="signaler pour un autre enfant "
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/checkbox_q1_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="signaler pour lui-même et pour d'autres enfants"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:onClick="onCheckboxClicked"/>
+        <View
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#bbbbbb" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="c. Représentant légal de l'enfant"
+            android:textSize="15dp"
+            android:layout_gravity="left">
+        </TextView>
+        <CheckBox android:id="@+id/checkbox_q2_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tuteur"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/checkbox_q2_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Testateur"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/checkbox_q2_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Curateur"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/checkbox_q2_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Celui qui le recueille"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/checkbox_q2_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Celui qui en a la garde"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:onClick="onCheckboxClicked"/>
+        <View
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#bbbbbb" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="d. Personne physique"
+            android:textSize="15dp"
+            android:layout_gravity="left">
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox android:id="@+id/checkbox_q4_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Féminin"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox android:id="@+id/checkbox_q4_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masculin"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:onClick="onCheckboxClicked"/>
+        </LinearLayout>
+
+        <CheckBox android:id="@+id/checkbox_q4_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Relatifs"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/checkbox_q4_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Voisins"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/checkbox_q4_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Autres"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:onClick="onCheckboxClicked"/>
+
+        <View
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#bbbbbb" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="d. Personne morale"
+            android:textSize="15dp"
+            android:layout_gravity="left">
+        </TextView>
+
+
+        <CheckBox android:id="@+id/checkbox_q6_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Association"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/checkbox_q6_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ecole"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/checkbox_q6_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hopital"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/checkbox_q6_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clinique"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:onClick="onCheckboxClicked"/>
+        <View
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#bbbbbb" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Nom et prénom de l'enfant"
+            android:textSize="15dp"
+            android:layout_gravity="left">
+        </TextView>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/my_border_white"
+            android:inputType="text"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <View
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#bbbbbb" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Cause du signalement"
+            android:textSize="15dp"
+            android:layout_gravity="left">
+        </TextView>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/my_border_white"
+            android:inputType="text"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"/>
+        <View
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#bbbbbb" />
+
+
+        <CheckBox android:id="@+id/checkbox_final_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Le déclarant préfère garder l'anonymat"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/checkbox_final_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Le déclarant ne voit pas d'inconvénient à révéler son identité"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:onClick="onCheckboxClicked"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Envoyer">
+
+        </Button>
+
+    </LinearLayout>
+</ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

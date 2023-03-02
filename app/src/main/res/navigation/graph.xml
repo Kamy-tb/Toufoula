@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/graph"
+    app:startDestination="@id/urgenceFragment2">
+
+    <fragment
+        android:id="@+id/profilFragment"
+        android:name="com.example.menuapplication.ProfilFragment"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" >
+        <action
+            android:id="@+id/action_profilFragment_to_reglementaionFragment"
+            app:destination="@id/reglementaionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/urgenceFragment2"
+        android:name="com.example.menuapplication.UrgenceFragment"
+        android:label="fragment_urgence"
+        tools:layout="@layout/fragment_urgence" />
+    <fragment
+        android:id="@+id/signalementFragment"
+        android:name="com.example.menuapplication.SignalementFragment"
+        android:label="fragment_signalement"
+        tools:layout="@layout/fragment_signalement" >
+        <action
+            android:id="@+id/action_signalementFragment_to_formulaireFragment"
+            app:destination="@id/formulaireFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reglementaionFragment"
+        android:name="com.example.menuapplication.ReglementaionFragment"
+        android:label="fragment_reglementaion"
+        tools:layout="@layout/fragment_reglementaion" />
+    <fragment
+        android:id="@+id/formulaireFragment"
+        android:name="com.example.menuapplication.FormulaireFragment"
+        android:label="fragment_formulaire"
+        tools:layout="@layout/fragment_formulaire" />
+</navigation>

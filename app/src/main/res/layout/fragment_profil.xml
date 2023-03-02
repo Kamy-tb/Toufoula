@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilFragment">
+
+    <LinearLayout
+        android:translationY="-79dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:scrollbars="horizontal"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-86dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/logo" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/my_border_white"
+            android:fontFamily="sans-serif"
+            android:text="Aide et assistance"
+            android:textColor="#ffff"
+            android:textSize="18dp"
+            app:icon="@drawable/help">
+
+        </Button>
+
+        <Button
+            android:id="@+id/reglementation"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/my_border_white"
+            android:fontFamily="sans-serif"
+            android:text="Droits d'enfants"
+            android:textColor="#ffff"
+            android:textSize="18dp"
+            app:icon="@drawable/law" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/my_border_white"
+            android:fontFamily="sans-serif"
+            android:text="Avis et feedback"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            app:icon="@drawable/feedback">
+
+        </Button>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
